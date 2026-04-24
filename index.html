@@ -1,48 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Webb's Motors - Home</title>
+    <title>Home - Webb's Motors</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
     <h2>Webb's Motors</h2>
     <nav>
-        Home | About Us | Services | Gallery | Contact | Feedback
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="feedback.html">Feedback</a>
     </nav>
 </header>
 
 <section>
     <h1>QUALITY REPAIRS. DRIVEN BY TRUST.</h1>
     <p>Professional panel beating and spray painting services in Gaborone.</p>
-    <button>GET IN TOUCH</button>
-</section>
-
-<section>
-    <h2>ABOUT US</h2>
-    <p>Short description about the company...</p>
-    <button>READ MORE</button>
+    <button onclick="location.href='contact.html'">GET IN TOUCH</button>
 </section>
 
 <section>
     <h2>OUR SERVICES</h2>
-    <div>
-        <h3>Panel Beating</h3>
-        <button>VIEW MORE</button>
-    </div>
-    <div>
-        <h3>Spray Painting</h3>
-        <button>VIEW MORE</button>
-    </div>
-    <div>
-        <h3>Other Services</h3>
-        <button>VIEW MORE</button>
+    <div class="grid">
+        <div class="card">Panel Beating</div>
+        <div class="card">Spray Painting</div>
+        <div class="card">Other Services</div>
     </div>
 </section>
 
-<footer>
-    <p>© 2025 Webb's Motors</p>
-</footer>
+<footer>© 2025 Webb's Motors</footer>
 
 </body>
 </html>
