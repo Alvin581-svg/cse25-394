@@ -1,34 +1,141 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Feedback</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Webbs Motors</title>
 </head>
 <body>
 
-<header>
-    <h2>Webb's Motors</h2>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="services.html">Services</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
-        <a href="feedback.html">Feedback</a>
-    </nav>
-</header>
+    <!-- Header / Navigation -->
+    <header>
+        <div>
+            <img src="images/logo.png" alt="Webbs Motors Logo" width="120">
+        </div>
 
-<section>
-    <h1>WE VALUE YOUR FEEDBACK</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="feedback.html">Feedback</a>
+        </nav>
+    </header>
 
-    <form>
-        <input type="text" placeholder="Full Name"><br><br>
-        <textarea placeholder="Your Feedback"></textarea><br><br>
-        <button>SUBMIT</button>
-    </form>
-</section>
+    <!-- Main Content -->
+    <main>
 
-<footer>© 2025 Webb's Motors</footer>
+        <!-- Page Title -->
+        <section>
+            <h1>WE VALUE YOUR FEEDBACK</h1>
+            <p>Help us serve you better.</p>
+        </section>
+
+        <!-- Feedback Section -->
+        <section>
+
+            <!-- Feedback Form -->
+            <article>
+                <h2>LEAVE YOUR FEEDBACK</h2>
+
+                <form action="#" method="post">
+
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <p>Rating</p>
+                    <div>
+                        <span>★</span>
+                        <span>★</span>
+                        <span>★</span>
+                        <span>★</span>
+                        <span>★</span>
+                    </div>
+
+                    <label for="feedback">Your Feedback</label>
+                    <textarea id="feedback" name="feedback" rows="5" required></textarea>
+
+                    <button type="submit">SUBMIT FEEDBACK</button>
+
+                </form>
+            </article>
+
+            <!-- Testimonials -->
+            <article>
+                <h2>WHAT OUR CUSTOMERS SAY</h2>
+
+                <!-- Testimonial 1 -->
+                <section>
+                    <img src="images/customer1.jpg" alt="Customer 1" width="80">
+                    <div>
+                        <p>★★★★★</p>
+                        <p>
+                            Excellent service and great attention to detail.
+                            My car looks brand new!
+                        </p>
+                        <p><strong>- Thabo M.</strong></p>
+                    </div>
+                </section>
+
+                <!-- Testimonial 2 -->
+                <section>
+                    <img src="images/customer2.jpg" alt="Customer 2" width="80">
+                    <div>
+                        <p>★★★★★</p>
+                        <p>
+                            Professional team, fast turnaround and very friendly staff.
+                        </p>
+                        <p><strong>- Keitumetse P.</strong></p>
+                    </div>
+                </section>
+
+                <!-- Testimonial 3 -->
+                <section>
+                    <img src="images/customer3.jpg" alt="Customer 3" width="80">
+                    <div>
+                        <p>★★★★★</p>
+                        <p>
+                            Highly recommended! Quality work and honest service.
+                        </p>
+                        <p><strong>- Bokamoso L.</strong></p>
+                    </div>
+                </section>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        <div>
+            <img src="images/logo.png" alt="Webbs Motors Logo" width="100">
+        </div>
+
+        <div>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">WhatsApp</a>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="feedback.html">Feedback</a>
+        </nav>
+
+        <p>© 2025 Webbs Motors. All Rights Reserved.</p>
+
+    </footer>
 
 </body>
 </html>
