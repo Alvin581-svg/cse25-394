@@ -1,38 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Contact</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Webbs Motors</title>
 </head>
 <body>
 
-<header>
-    <h2>Webb's Motors</h2>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="services.html">Services</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
-        <a href="feedback.html">Feedback</a>
-    </nav>
-</header>
+    <!-- Header / Navigation -->
+    <header>
+        <div>
+            <img src="images/logo.png" alt="Webbs Motors Logo" width="120">
+        </div>
 
-<section>
-    <h1>CONTACT US</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="feedback.html">Feedback</a>
+        </nav>
+    </header>
 
-    <form>
-        <input type="text" placeholder="Full Name"><br><br>
-        <input type="email" placeholder="Email"><br><br>
-        <textarea placeholder="Message"></textarea><br><br>
-        <button>SEND</button>
-    </form>
+    <!-- Main Content -->
+    <main>
 
-    <p>📞 +267 75673647</p>
-    <p>📍 Plot 22942 Industrial, Gaborone, Botswana</p>
-</section>
+        <!-- Page Title -->
+        <section>
+            <h1>CONTACT US</h1>
+            <p>We’d love to hear from you.</p>
+        </section>
 
-<footer>© 2025 Webb's Motors</footer>
+        <!-- Contact Section -->
+        <section>
+
+            <!-- Contact Form -->
+            <article>
+                <h2>SEND US A MESSAGE</h2>
+
+                <form action="#" method="post">
+                    
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">SEND MESSAGE</button>
+
+                </form>
+            </article>
+
+            <!-- Contact Information -->
+            <article>
+                <h2>CONTACT INFORMATION</h2>
+
+                <p><strong>Phone:</strong> +267 75673647</p>
+                <p><strong>Email:</strong> info@webbsmotors.co.bw</p>
+                <p><strong>Address:</strong> Plot 22942 Industrial, Gaborone, Botswana</p>
+
+                <h3>BUSINESS HOURS</h3>
+                <p>Mon - Fri: 8:00 AM - 5:00 PM</p>
+                <p>Saturday: 8:00 AM - 1:00 PM</p>
+                <p>Sunday: Closed</p>
+            </article>
+
+        </section>
+
+        <!-- Map Section -->
+        <section>
+            <h2>OUR LOCATION</h2>
+            <img src="images/map.png" alt="Webbs Motors Location Map">
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        <div>
+            <img src="images/logo.png" alt="Webbs Motors Logo" width="100">
+        </div>
+
+        <div>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">WhatsApp</a>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="feedback.html">Feedback</a>
+        </nav>
+
+        <p>© 2025 Webbs Motors. All Rights Reserved.</p>
+
+    </footer>
 
 </body>
 </html>
