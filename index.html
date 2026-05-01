@@ -15,113 +15,107 @@ body {
 
 /* NAVBAR */
 .navbar {
-    background: white;
-    border-top: 4px solid green;
+    background: #fff;
+    padding: 10px 30px;
 }
 
 .nav-link {
-    color: black !important;
+    color: black;
     font-weight: 500;
+    margin: 0 10px;
 }
 
 .nav-link.active {
     background: red;
     color: white !important;
-    border-radius: 6px;
-    padding: 6px 12px;
+    border-radius: 8px;
+    padding: 6px 15px;
 }
 
 /* HERO */
 .hero {
-    background: url('images/hero-car.jpg') no-repeat center center/cover;
+    background: url('https://images.unsplash.com/photo-1619767886558-efdc259cde1a') no-repeat center/cover;
+    height: 500px;
     color: white;
-    padding: 120px 0;
+    display: flex;
+    align-items: center;
+}
+
+.hero-text {
+    max-width: 500px;
 }
 
 .hero h1 {
-    font-size: 48px;
+    font-size: 40px;
     font-weight: bold;
 }
 
-.hero span.green {
-    color: #00b300;
+.green {
+    color: #00c853;
 }
 
-.hero span.red {
+.red {
     color: red;
 }
 
 .btn-red {
     background: red;
     color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
 }
 
 .btn-green {
     background: green;
     color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
 }
 
 /* SECTION */
 .section {
-    padding: 60px 0;
+    padding: 50px;
 }
 
-.features i {
-    font-size: 24px;
-    color: red;
-}
-
-/* DARK SERVICES STRIP */
-.services-strip {
-    background: linear-gradient(to right, black, #003300);
-    color: white;
-    padding: 40px 0;
-}
-
-/* CTA */
-.cta {
-    background: linear-gradient(to right, black, #003300);
-    color: white;
-    padding: 60px 0;
+.features {
+    display: flex;
+    gap: 30px;
 }
 
 /* FOOTER */
 .footer {
     background: linear-gradient(to right, red, green);
     color: white;
-    padding: 30px 0;
+    padding: 20px;
     text-align: center;
 }
 </style>
 
 </head>
+
 <body>
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg px-4">
-    <a class="navbar-brand" href="#">
-        <img src="images/logo.png" width="80">
-    </a>
+<nav class="navbar navbar-expand-lg">
+    <img src="https://via.placeholder.com/80" width="80">
 
-    <div class="collapse navbar-collapse">
-       <ul class="navbar-nav mx-auto">
-    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-    <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
-</ul>
+    <div class="ms-auto">
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About Us</a>
+        <a class="nav-link" href="services.html">Services</a>
+        <a class="nav-link" href="gallery.html">Gallery</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="nav-link" href="feedback.html">Feedback</a>
     </div>
 </nav>
 
 <!-- HERO -->
-<section class="hero">
-    <div class="container">
+<div class="hero">
+    <div class="container hero-text">
         <h1>
-            EXPERT PANEL<br>
-            BEATING &<br>
-            <span class="green">SPRAY PAINTING</span><br>
+            EXPERT PANEL <br>
+            BEATING & <br>
+            <span class="green">SPRAY PAINTING</span> <br>
             <span class="red">SERVICES</span>
         </h1>
 
@@ -131,75 +125,65 @@ body {
             We restore your vehicle to perfection.
         </p>
 
-        <a href="services.html" class="btn btn-red me-2">OUR SERVICES</a>
-        <a href="contact.html" class="btn btn-green">GET IN TOUCH</a>
+        <button class="btn-red">OUR SERVICES</button>
+        <button class="btn-green">GET IN TOUCH</button>
     </div>
-</section>
+</div>
 
 <!-- ABOUT -->
-<section class="section">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <h2>WELCOME TO <span style="color:red;">WEBBS</span> <span style="color:green;">MOTORS</span></h2>
-                <p>
-                    We are a professional panel beating and spray painting company based in Gaborone, Botswana.
-                </p>
-                <p>
-                    Our team of experts is dedicated to providing high-quality repairs and outstanding customer service.
-                </p>
-            </div>
+<div class="section container">
+    <h2>WELCOME TO <span class="red">WEBBS</span> <span class="green">MOTORS</span></h2>
 
-            <div class="col-md-6 features">
-                <p><strong>✔ QUALITY WORKMANSHIP</strong><br>We deliver top-quality results every time.</p>
-                <p><strong>✔ CUSTOMER SATISFACTION</strong><br>Your satisfaction is our priority.</p>
-                <p><strong>✔ FAST & RELIABLE</strong><br>We value your time and deliver on time.</p>
-            </div>
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <p>
+                We are a professional panel beating and spray painting company based in Gaborone, Botswana.
+                Our team of experts is dedicated to providing high-quality repairs and outstanding customer service.
+            </p>
+        </div>
+
+        <div class="col-md-6">
+            <p><strong>QUALITY WORKMANSHIP</strong><br>We deliver top-quality results every time.</p>
+            <p><strong>CUSTOMER SATISFACTION</strong><br>Your satisfaction is our priority.</p>
+            <p><strong>FAST & RELIABLE</strong><br>We value your time and deliver on time.</p>
         </div>
     </div>
-</section>
+</div>
 
-<!-- SERVICES STRIP -->
-<section class="services-strip text-center">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <h5>PANEL BEATING</h5>
-                <p>Restoring your vehicle to pre-accident condition.</p>
-            </div>
-            <div class="col-md-4">
-                <h5>SPRAY PAINTING</h5>
-                <p>Perfect color matching and high-quality finish.</p>
-            </div>
-            <div class="col-md-4">
-                <h5>INSURANCE ASSISTANCE</h5>
-                <p>We handle insurance claims to make it easy for you.</p>
-            </div>
+<!-- SERVICES BAR -->
+<div style="background:#111; color:white; padding:30px;">
+    <div class="container d-flex justify-content-between text-center">
+        <div>
+            <h5>PANEL BEATING</h5>
+            <p>Restoring your vehicle</p>
+        </div>
+        <div>
+            <h5>SPRAY PAINTING</h5>
+            <p>Perfect color matching</p>
+        </div>
+        <div>
+            <h5>INSURANCE</h5>
+            <p>We handle claims</p>
         </div>
     </div>
-</section>
+</div>
 
 <!-- CTA -->
-<section class="cta">
-    <div class="container text-center">
-        <h2>Ready to restore your vehicle?</h2>
-        <p>Contact us today for a free assessment.</p>
-        <a href="#" class="btn btn-green">GET IN TOUCH</a>
+<div style="background:#000; color:white; padding:50px;">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div>
+            <h3>Ready to restore your vehicle?</h3>
+            <p>Contact us today for a free assessment.</p>
+        </div>
+        <button class="btn-green">GET IN TOUCH</button>
     </div>
-</section>
+</div>
 
 <!-- FOOTER -->
-<footer class="footer">
-    <div class="container">
-        <img src="images/logo.png" width="80"><br><br>
-
-        <p>
-            Home | About Us | Services | Gallery | Contact | Feedback
-        </p>
-
-        <p>© 2025 Webbs Motors. All Rights Reserved.</p>
-    </div>
-</footer>
+<div class="footer">
+    <p>Home | About | Services | Gallery | Contact | Feedback</p>
+    <p>© 2025 Webbs Motors. All Rights Reserved.</p>
+</div>
 
 </body>
 </html>
