@@ -21,9 +21,7 @@ body{
     background:linear-gradient(to right, red, green);
 }
 
-/* =========================
-   HEADER
-========================= */
+/* HEADER */
 
 header{
     display:flex;
@@ -39,7 +37,7 @@ header{
 
 nav{
     display:flex;
-    gap:40px;
+    gap:38px;
 }
 
 nav a{
@@ -47,7 +45,7 @@ nav a{
     color:#111;
     font-size:16px;
     font-weight:600;
-    padding:12px 22px;
+    padding:12px 20px;
     border-radius:8px;
     transition:0.3s;
 }
@@ -62,54 +60,55 @@ nav a.active{
     color:#fff;
 }
 
-/* =========================
-   HERO SECTION
-========================= */
+/* HERO SECTION */
 
 .hero-section{
-    min-height:85vh;
+    position:relative;
+    min-height:75vh;
 
-    background:
-    linear-gradient(rgba(0,0,0,0.65),
-    rgba(0,0,0,0.65)),
-    url("images/hero-car.jpg");
-
+    background:url("images/hero-car.jpg");
     background-size:cover;
     background-position:center;
 
     display:flex;
     align-items:center;
 
-    padding:60px;
+    padding:50px;
+}
+
+.hero-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.55);
 }
 
 .hero-content{
+    position:relative;
+    z-index:2;
     width:45%;
     color:#fff;
 }
 
-.hero-text h1{
+.hero-content h1{
     font-size:58px;
     font-weight:900;
     line-height:1.1;
     margin-bottom:22px;
 }
 
-.hero-text .green{
+.hero-content .green{
     color:#00b000;
 }
 
-.hero-text .red{
+.hero-content .red{
     color:red;
 }
 
-.hero-text p{
+.hero-content p{
     font-size:18px;
-    line-height:1.8;
-    margin-bottom:35px;
+    line-height:1.7;
+    margin-bottom:30px;
 }
-
-/* HERO BUTTONS */
 
 .hero-buttons{
     display:flex;
@@ -118,7 +117,7 @@ nav a.active{
 
 .hero-buttons a{
     text-decoration:none;
-    padding:16px 30px;
+    padding:16px 28px;
     border-radius:7px;
     font-size:16px;
     font-weight:700;
@@ -139,16 +138,13 @@ nav a.active{
     transform:translateY(-3px);
 }
 
-/* =========================
-   WELCOME SECTION
-========================= */
+/* WELCOME SECTION */
 
 .welcome-section{
     display:flex;
     justify-content:space-between;
-    gap:40px;
+    gap:45px;
     padding:50px;
-    background:#fff;
 }
 
 .welcome-text{
@@ -158,7 +154,6 @@ nav a.active{
 .welcome-text h2{
     font-size:42px;
     font-weight:900;
-    line-height:1.2;
     margin-bottom:20px;
 }
 
@@ -173,21 +168,20 @@ nav a.active{
 .welcome-text p{
     font-size:17px;
     line-height:1.8;
-    margin-bottom:20px;
+    margin-bottom:18px;
     color:#222;
 }
 
-/* =========================
-   FEATURES
-========================= */
+/* FEATURES */
 
 .features{
     width:40%;
+    border-left:1px solid #ddd;
+    padding-left:35px;
+
     display:flex;
     flex-direction:column;
     gap:30px;
-    border-left:1px solid #ddd;
-    padding-left:35px;
 }
 
 .feature-box{
@@ -197,14 +191,14 @@ nav a.active{
 }
 
 .feature-box i{
-    font-size:34px;
+    font-size:36px;
     color:red;
 }
 
 .feature-text h3{
     font-size:18px;
-    font-weight:800;
     margin-bottom:8px;
+    font-weight:800;
 }
 
 .feature-text p{
@@ -213,12 +207,11 @@ nav a.active{
     color:#333;
 }
 
-/* =========================
-   SERVICES STRIP
-========================= */
+/* SERVICE STRIP */
 
 .service-strip{
     background:linear-gradient(to right, #000, #021324, #003300);
+
     color:#fff;
 
     display:flex;
@@ -229,21 +222,20 @@ nav a.active{
 }
 
 .strip-box{
+    width:30%;
+
     display:flex;
     align-items:flex-start;
     gap:15px;
-    width:30%;
 }
 
 .strip-box i{
     font-size:38px;
-    color:#fff;
 }
 
 .strip-text h3{
     font-size:20px;
     margin-bottom:8px;
-    font-weight:800;
 }
 
 .strip-text p{
@@ -258,23 +250,28 @@ nav a.active{
     background:#666;
 }
 
-/* =========================
-   CTA SECTION
-========================= */
+/* CTA SECTION */
 
 .cta-section{
-    background:
-    linear-gradient(rgba(0,0,0,0.8),
-    rgba(0,0,0,0.8)),
-    url("images/cta-car.jpg");
+    position:relative;
 
+    background:url("images/cta-car.jpg");
     background-size:cover;
     background-position:center;
 
-    padding:50px;
+    padding:55px 50px;
+}
+
+.cta-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.75);
 }
 
 .cta-content{
+    position:relative;
+    z-index:2;
+
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -284,7 +281,6 @@ nav a.active{
     color:#fff;
     font-size:40px;
     margin-bottom:12px;
-    font-weight:900;
 }
 
 .cta-text p{
@@ -299,7 +295,7 @@ nav a.active{
     padding:18px 34px;
     border-radius:8px;
     font-size:18px;
-    font-weight:800;
+    font-weight:700;
     transition:0.3s;
 }
 
@@ -307,9 +303,7 @@ nav a.active{
     background:#009900;
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 footer{
     background:linear-gradient(to right, red, #9f0000, green);
@@ -340,9 +334,11 @@ footer{
     height:55px;
     border:2px solid #fff;
     border-radius:50%;
+
     display:flex;
     justify-content:center;
     align-items:center;
+
     text-decoration:none;
     color:#fff;
     font-size:22px;
@@ -350,30 +346,24 @@ footer{
 
 .footer-links{
     display:flex;
-    gap:30px;
+    gap:28px;
 }
 
 .footer-links a{
     text-decoration:none;
     color:#fff;
-    font-size:18px;
+    font-size:17px;
 }
 
 .copyright{
     text-align:center;
-    margin-top:25px;
+    margin-top:22px;
     font-size:18px;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+/* RESPONSIVE */
 
 @media(max-width:1200px){
-
-    .hero-content{
-        width:60%;
-    }
 
     .welcome-section{
         flex-direction:column;
@@ -385,13 +375,13 @@ footer{
     }
 
     .features{
-        border-left:none;
+        border:none;
         padding-left:0;
     }
 
     .service-strip{
         flex-direction:column;
-        gap:25px;
+        gap:30px;
     }
 
     .strip-box{
@@ -416,38 +406,22 @@ footer{
         gap:15px;
     }
 
-    .hero-section{
-        padding:40px 25px;
-    }
-
     .hero-content{
         width:100%;
     }
 
-    .hero-text h1{
-        font-size:42px;
-    }
-
-    .hero-text p{
-        font-size:16px;
-    }
-
-    .welcome-section{
-        padding:40px 25px;
+    .hero-content h1{
+        font-size:40px;
     }
 
     .welcome-text h2{
-        font-size:34px;
+        font-size:32px;
     }
 
     .cta-content{
         flex-direction:column;
         gap:25px;
         text-align:center;
-    }
-
-    .cta-text h2{
-        font-size:32px;
     }
 
     .footer-content{
