@@ -1,1 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+}
 
+/* NAVBAR */
+.navbar {
+    background: white;
+    border-top: 4px solid green;
+}
+
+.nav-link {
+    color: black !important;
+}
+
+.nav-link.active {
+    background: red;
+    color: white !important;
+    border-radius: 6px;
+    padding: 6px 12px;
+}
+
+/* ABOUT SECTION */
+.about {
+    padding: 60px 0;
+}
+
+.about h1 .red {
+    color: red;
+}
+
+.about h1 .green {
+    color: green;
+}
+
+/* VALUES */
+.values {
+    background: linear-gradient(to right, black, #003300);
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.values i {
+    font-size: 30px;
+    color: red;
+}
+
+/* STATS */
+.stats {
+    background: linear-gradient(to right, red, green);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* LOWER SECTION */
+.lower {
+    padding: 50px 0;
+}
+
+.lower h5 {
+    font-weight: bold;
+}
+
+/* FOOTER */
+.footer {
+    background: linear-gradient(to right, red, green);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
