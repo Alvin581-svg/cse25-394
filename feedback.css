@@ -1,0 +1,324 @@
+/* feedback.css */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#fff;
+    color:#111;
+}
+
+/* TOP LINE */
+
+.top-line{
+    width:100%;
+    height:6px;
+    background:linear-gradient(to right, red, green);
+}
+
+/* HEADER */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 45px;
+    background:#fff;
+}
+
+.logo img{
+    width:130px;
+}
+
+nav{
+    display:flex;
+    gap:50px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#111;
+    font-size:18px;
+    font-weight:600;
+    padding:14px 24px;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    background:red;
+    color:#fff;
+}
+
+nav a.active{
+    background:red;
+    color:#fff;
+}
+
+/* TITLE */
+
+.feedback-title{
+    text-align:center;
+    padding:50px 20px;
+}
+
+.feedback-title h1{
+    font-size:72px;
+    font-weight:900;
+    color:#000;
+    margin-bottom:20px;
+}
+
+.feedback-title span{
+    color:red;
+}
+
+.feedback-title p{
+    font-size:26px;
+    color:#333;
+}
+
+/* FEEDBACK SECTION */
+
+.feedback-container{
+    width:94%;
+    margin:auto;
+    display:flex;
+    gap:30px;
+    padding-bottom:60px;
+}
+
+/* LEFT SIDE */
+
+.feedback-form-box{
+    flex:1;
+    background:#fafafa;
+    border-radius:18px;
+    padding:35px;
+}
+
+.feedback-form-box h2{
+    font-size:28px;
+    margin-bottom:35px;
+    font-weight:900;
+}
+
+form input,
+form textarea{
+    width:100%;
+    padding:18px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    margin-bottom:25px;
+    font-size:18px;
+    outline:none;
+}
+
+form textarea{
+    height:220px;
+    resize:none;
+}
+
+.rating-box{
+    margin-bottom:30px;
+}
+
+.rating-box label{
+    display:block;
+    font-size:22px;
+    margin-bottom:20px;
+}
+
+.stars{
+    display:flex;
+    gap:15px;
+}
+
+.stars i{
+    font-size:42px;
+    color:red;
+    cursor:pointer;
+}
+
+form button{
+    background:green;
+    color:#fff;
+    border:none;
+    padding:18px 35px;
+    font-size:22px;
+    font-weight:700;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+form button:hover{
+    background:#009900;
+}
+
+/* RIGHT SIDE */
+
+.reviews-box{
+    flex:1;
+    background:#fafafa;
+    border-radius:18px;
+    padding:35px;
+}
+
+.reviews-box h2{
+    font-size:28px;
+    margin-bottom:35px;
+    font-weight:900;
+}
+
+.review-card{
+    display:flex;
+    gap:25px;
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:15px;
+    padding:25px;
+    margin-bottom:25px;
+    align-items:flex-start;
+}
+
+.review-card img{
+    width:110px;
+    height:110px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.review-content{
+    flex:1;
+}
+
+.review-stars{
+    color:red;
+    font-size:32px;
+    margin-bottom:18px;
+}
+
+.review-content p{
+    font-size:20px;
+    line-height:1.8;
+    margin-bottom:18px;
+    color:#222;
+}
+
+.review-content h3{
+    font-size:22px;
+    font-weight:900;
+}
+
+/* FOOTER */
+
+footer{
+    background:linear-gradient(to right, red, #9f0000, green);
+    color:#fff;
+    padding:35px 40px;
+    border-radius:10px 10px 0 0;
+}
+
+.footer-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.footer-logo img{
+    width:130px;
+    background:#fff;
+    border-radius:50%;
+}
+
+.footer-socials{
+    display:flex;
+    gap:20px;
+}
+
+.footer-socials a{
+    width:60px;
+    height:60px;
+    border:2px solid #fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    color:#fff;
+    font-size:26px;
+}
+
+.footer-links{
+    display:flex;
+    gap:35px;
+}
+
+.footer-links a{
+    text-decoration:none;
+    color:#fff;
+    font-size:20px;
+}
+
+.copyright{
+    text-align:center;
+    margin-top:30px;
+    font-size:22px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1200px){
+
+    .feedback-container{
+        flex-direction:column;
+    }
+
+    .feedback-title h1{
+        font-size:55px;
+    }
+}
+
+@media(max-width:850px){
+
+    header{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:18px;
+    }
+
+    .footer-content{
+        flex-direction:column;
+        gap:30px;
+    }
+
+    .footer-links{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .review-card{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+    }
+
+    .feedback-title h1{
+        font-size:40px;
+    }
+
+    .feedback-title p{
+        font-size:20px;
+    }
+}
