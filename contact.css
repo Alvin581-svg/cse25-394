@@ -1,1 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
 
+/* NAVBAR */
+.navbar {
+    background: white;
+    border-top: 4px solid green;
+}
+
+.nav-link {
+    color: black !important;
+}
+
+.nav-link.active {
+    background: red;
+    color: white !important;
+    border-radius: 6px;
+    padding: 6px 14px;
+}
+
+/* TITLE */
+.title {
+    text-align: center;
+    margin: 50px 0 20px;
+}
+
+.title h1 {
+    font-weight: bold;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.underline {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(to right, red, green);
+    margin: 10px auto;
+}
+
+/* FORM + INFO */
+.box {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+input,
+textarea {
+    margin-bottom: 15px;
+}
+
+/* BUTTON */
+.btn-green {
+    background: green;
+    color: white;
+}
+
+/* ICONS */
+.icon {
+    color: red;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/* MAP */
+.map {
+    margin-top: 40px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+/* FOOTER */
+.footer {
+    background: linear-gradient(to right, red, green);
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 20px;
+}
+
+.footer a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
