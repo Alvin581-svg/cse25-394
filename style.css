@@ -1,1 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+}
 
+/* NAVBAR */
+.navbar {
+    background: white;
+    border-top: 4px solid green;
+}
+
+.nav-link {
+    color: black !important;
+    font-weight: 500;
+}
+
+.nav-link.active {
+    background: red;
+    color: white !important;
+    border-radius: 6px;
+    padding: 6px 12px;
+}
+
+/* HERO */
+.hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 120px 0;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.hero .green {
+    color: #00b300;
+}
+
+.hero .red {
+    color: red;
+}
+
+/* BUTTONS */
+.btn-red {
+    background: red;
+    color: white;
+}
+
+.btn-green {
+    background: green;
+    color: white;
+}
+
+/* SECTION */
+.section {
+    padding: 60px 0;
+}
+
+.features i {
+    font-size: 24px;
+    color: red;
+}
+
+/* SERVICES STRIP */
+.services-strip {
+    background: linear-gradient(to right, black, #003300);
+    color: white;
+    padding: 40px 0;
+}
+
+/* CTA */
+.cta {
+    background: linear-gradient(to right, black, #003300);
+    color: white;
+    padding: 60px 0;
+}
+
+/* FOOTER */
+.footer {
+    background: linear-gradient(to right, red, green);
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
