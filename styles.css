@@ -1,1 +1,329 @@
+/* style.css */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#fff;
+    color:#111;
+}
+
+/* TOP LINE */
+
+.top-line{
+    height:6px;
+    background:linear-gradient(to right, red, green);
+}
+
+/* NAVBAR */
+
+.navbar{
+    background:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 60px;
+}
+
+.logo img{
+    width:140px;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:40px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#111;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active{
+    background:red;
+    color:#fff;
+    padding:12px 20px;
+    border-radius:6px;
+}
+
+/* HERO */
+
+.hero{
+    position:relative;
+    height:700px;
+    background:
+        linear-gradient(rgba(0,0,0,0.65),
+        rgba(0,0,0,0.65)),
+        url('images/car.jpg');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    padding-left:60px;
+}
+
+.hero-content{
+    color:#fff;
+    max-width:600px;
+}
+
+.hero-content h1{
+    font-size:70px;
+    line-height:1.1;
+    font-weight:900;
+}
+
+.green{
+    color:#16b316;
+}
+
+.red{
+    color:red;
+}
+
+.hero-content p{
+    margin-top:30px;
+    font-size:28px;
+    line-height:1.6;
+}
+
+.hero-buttons{
+    margin-top:35px;
+    display:flex;
+    gap:20px;
+}
+
+.btn{
+    text-decoration:none;
+    color:#fff;
+    padding:18px 35px;
+    border-radius:6px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.red-btn{
+    background:red;
+}
+
+.green-btn{
+    background:#18b118;
+}
+
+.btn:hover{
+    opacity:0.8;
+}
+
+/* WELCOME SECTION */
+
+.welcome-section{
+    padding:80px 60px;
+    display:flex;
+    justify-content:space-between;
+    gap:60px;
+}
+
+.welcome-text{
+    width:50%;
+}
+
+.welcome-text h2{
+    font-size:55px;
+    margin-bottom:30px;
+}
+
+.welcome-text span{
+    color:red;
+}
+
+.welcome-text span:last-child{
+    color:green;
+}
+
+.welcome-text p{
+    font-size:28px;
+    line-height:1.7;
+    margin-bottom:25px;
+}
+
+/* FEATURES */
+
+.features{
+    width:45%;
+}
+
+.feature-box{
+    display:flex;
+    gap:25px;
+    margin-bottom:45px;
+}
+
+.feature-box i{
+    color:red;
+    font-size:50px;
+}
+
+.feature-box h3{
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+.feature-box p{
+    font-size:24px;
+    line-height:1.5;
+}
+
+/* SERVICES BAR */
+
+.services-bar{
+    background:#020814;
+    color:#fff;
+    padding:45px 60px;
+    display:flex;
+    justify-content:space-between;
+    gap:40px;
+}
+
+.service-item{
+    display:flex;
+    gap:20px;
+    width:33%;
+}
+
+.service-item i{
+    font-size:45px;
+    color:#fff;
+}
+
+.service-item h3{
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+.service-item p{
+    font-size:22px;
+    line-height:1.5;
+}
+
+/* CTA */
+
+.cta-section{
+    background:
+        linear-gradient(rgba(0,0,0,0.75),
+        rgba(0,0,0,0.75)),
+        url('images/darkcar.jpg');
+    background-size:cover;
+    background-position:center;
+    color:#fff;
+    padding:80px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.cta-content h2{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.cta-content p{
+    font-size:28px;
+}
+
+/* FOOTER */
+
+footer{
+    background:linear-gradient(to right, red, green);
+    padding:40px 60px;
+    color:#fff;
+    text-align:center;
+}
+
+.footer-logo img{
+    width:120px;
+    margin-bottom:25px;
+}
+
+.social-icons{
+    margin-bottom:25px;
+}
+
+.social-icons a{
+    color:#fff;
+    margin:0 15px;
+    font-size:35px;
+}
+
+.footer-links{
+    margin-bottom:20px;
+}
+
+.footer-links a{
+    color:#fff;
+    text-decoration:none;
+    margin:0 15px;
+    font-size:22px;
+}
+
+.copyright{
+    font-size:20px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:992px){
+
+    .navbar{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero{
+        height:auto;
+        padding:80px 30px;
+    }
+
+    .hero-content h1{
+        font-size:45px;
+    }
+
+    .hero-content p{
+        font-size:22px;
+    }
+
+    .welcome-section{
+        flex-direction:column;
+    }
+
+    .welcome-text,
+    .features{
+        width:100%;
+    }
+
+    .services-bar{
+        flex-direction:column;
+    }
+
+    .service-item{
+        width:100%;
+    }
+
+    .cta-section{
+        flex-direction:column;
+        gap:30px;
+        text-align:center;
+    }
+}
