@@ -1,386 +1,238 @@
-<!-- about.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Webbs Motors</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us - Webbs Motors</title>
 
-    <!-- External CSS -->
-    <link rel="stylesheet" href="css/about.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<!-- LINK CSS -->
+<link rel="stylesheet" href="about.css">
+
 </head>
 <body>
 
-    <!-- HEADER -->
-    <header class="header">
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg px-4">
 
-        <!-- TOP LINES -->
-        <div class="top-line">
-            <div class="red-line"></div>
-            <div class="green-line"></div>
-        </div>
+    <a class="navbar-brand" href="index.html">
+        <img src="logo.png" width="80">
+    </a>
 
-        <!-- NAVBAR -->
-        <nav class="navbar">
+    <div class="collapse navbar-collapse">
 
-            <!-- LOGO -->
-            <div class="logo">
-                <img src="images/logo.png" alt="Webbs Motors Logo">
-            </div>
+        <ul class="navbar-nav mx-auto">
 
-            <!-- NAV LINKS -->
-            <ul class="nav-links">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
 
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="about.html">About Us</a>
+            </li>
 
-                <li>
-                    <a href="about.html" class="active">
-                        About Us
-                    </a>
-                </li>
+            <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+            </li>
 
-                <li>
-                    <a href="services.html">Services</a>
-                </li>
+            <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
 
-                <li>
-                    <a href="gallery.html">Gallery</a>
-                </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
 
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
+            <li class="nav-item">
+                <a class="nav-link" href="feedback.html">Feedback</a>
+            </li>
 
-                <li>
-                    <a href="feedback.html">Feedback</a>
-                </li>
+        </ul>
 
-            </ul>
+    </div>
 
-        </nav>
+</nav>
 
-    </header>
+<!-- ABOUT -->
+<section class="about">
 
-    <!-- ABOUT SECTION -->
-    <section class="about-section">
+<div class="container">
 
-        <!-- LEFT -->
-        <div class="about-left">
+<div class="row align-items-center">
 
-            <h1>
-                ABOUT
-                <span class="red-text">WEBBS</span>
-                <span class="green-text">MOTORS</span>
-            </h1>
+<div class="col-md-6">
 
-            <div class="title-line">
-                <div class="small-red"></div>
-                <div class="small-green"></div>
-            </div>
+    <h1>
+        ABOUT
+        <span class="red">WEBBS</span>
+        <span class="green">MOTORS</span>
+    </h1>
 
-            <p>
-                Webbs Motors is a trusted panel beating and
-                spray painting company based in
-                <strong>Gaborone, Botswana.</strong>
-            </p>
+    <p>
+        Webbs Motors is a trusted panel beating and spray painting company based in
+        <b>Gaborone, Botswana</b>.
+    </p>
 
-            <p>
-                We have built a solid reputation for delivering
-                exceptional workmanship, honest service, and
-                reliable solutions.
-            </p>
+    <p>
+        We have built a solid reputation for delivering exceptional workmanship,
+        honest service, and reliable solutions.
+    </p>
 
-            <p>
-                Our experienced team uses the latest technology
-                and high-quality materials to ensure every vehicle
-                leaves our workshop looking its best.
-            </p>
+    <p>
+        Our experienced team uses the latest technology and high-quality materials
+        to ensure every vehicle leaves our workshop looking its best.
+    </p>
 
-            <p>
-                We are passionate about cars and committed to
-                exceeding our <strong>customers’</strong> expectations.
-            </p>
+    <p>
+        We are passionate about cars and committed to exceeding our
+        <b>customers’</b> expectations.
+    </p>
 
-        </div>
+</div>
 
-        <!-- RIGHT -->
-        <div class="about-right">
+<div class="col-md-6">
+    <img src="about.jpg" class="img-fluid rounded">
+</div>
 
-            <img src="images/about-building.jpg"
-            alt="Webbs Motors Building">
+</div>
 
-        </div>
+</div>
 
-    </section>
+</section>
 
-    <!-- VALUES SECTION -->
-    <section class="values-section">
+<!-- VALUES -->
+<section class="values">
 
-        <h2>OUR VALUES</h2>
+<div class="container">
 
-        <div class="values-container">
+<h2>OUR VALUES</h2>
 
-            <!-- VALUE 1 -->
-            <div class="value-box">
+<div class="row mt-4">
 
-                <i class="fa-solid fa-shield"></i>
+    <div class="col-md-4">
+        <i>✔</i>
+        <h5>INTEGRITY</h5>
+        <p>We do the right thing always.</p>
+    </div>
 
-                <h3>INTEGRITY</h3>
+    <div class="col-md-4">
+        <i>⚙</i>
+        <h5>QUALITY</h5>
+        <p>We never compromise on quality.</p>
+    </div>
 
-                <p>
-                    We do the right
-                    thing always.
-                </p>
+    <div class="col-md-4">
+        <i>❤</i>
+        <h5>PASSION</h5>
+        <p>We love what we do and it shows.</p>
+    </div>
 
-            </div>
+</div>
 
-            <!-- VALUE 2 -->
-            <div class="value-box">
+</div>
 
-                <i class="fa-solid fa-gear"></i>
+</section>
 
-                <h3>QUALITY</h3>
+<!-- STATS -->
+<section class="stats">
 
-                <p>
-                    We never compromise
-                    on quality.
-                </p>
+<div class="container">
 
-            </div>
+<div class="row">
 
-            <!-- VALUE 3 -->
-            <div class="value-box">
+    <div class="col-md-3">
+        <h3>10+</h3>
+        <p>YEARS EXPERIENCE</p>
+    </div>
 
-                <i class="fa-regular fa-heart"></i>
+    <div class="col-md-3">
+        <h3>1000+</h3>
+        <p>HAPPY CUSTOMERS</p>
+    </div>
 
-                <h3>PASSION</h3>
+    <div class="col-md-3">
+        <h3>1500+</h3>
+        <p>VEHICLES REPAIRED</p>
+    </div>
 
-                <p>
-                    We love what we do
-                    and it shows.
-                </p>
+    <div class="col-md-3">
+        <h3>100%</h3>
+        <p>QUALITY GUARANTEE</p>
+    </div>
 
-            </div>
+</div>
 
-        </div>
+</div>
 
-    </section>
+</section>
 
-    <!-- STATS SECTION -->
-    <section class="stats-section">
+<!-- LOWER -->
+<section class="lower">
 
-        <!-- STAT 1 -->
-        <div class="stat-box">
+<div class="container">
 
-            <i class="fa-solid fa-user-tie"></i>
+<div class="row">
 
-            <div class="stat-text">
+<div class="col-md-4">
 
-                <h3>10+</h3>
+    <h5>WHY CHOOSE US?</h5>
 
-                <p>YEARS EXPERIENCE</p>
+    <ul>
+        <li>Skilled & Experienced Team</li>
+        <li>Modern Equipment</li>
+        <li>Quality Materials</li>
+        <li>Customer Satisfaction Guaranteed</li>
+    </ul>
 
-            </div>
+</div>
 
-        </div>
+<div class="col-md-4 text-center">
 
-        <!-- STAT 2 -->
-        <div class="stat-box">
+    <h5>OUR LOCATION</h5>
 
-            <i class="fa-solid fa-users"></i>
+    <p>
+        📍 Plot 22942 Industrial,<br>
+        Gaborone, Botswana
+    </p>
 
-            <div class="stat-text">
+</div>
 
-                <h3>1000+</h3>
+<div class="col-md-4 text-center">
 
-                <p>HAPPY CUSTOMERS</p>
+    <h5>FOLLOW US</h5>
 
-            </div>
+    <p>
+        Facebook | Instagram | WhatsApp
+    </p>
 
-        </div>
+</div>
 
-        <!-- STAT 3 -->
-        <div class="stat-box">
+</div>
 
-            <i class="fa-solid fa-car"></i>
+</div>
 
-            <div class="stat-text">
+</section>
 
-                <h3>1500+</h3>
+<!-- FOOTER -->
+<footer class="footer">
 
-                <p>VEHICLES REPAIRED</p>
+    <img src="logo.png" width="70"><br><br>
 
-            </div>
+    <p>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About Us</a> |
+        <a href="services.html">Services</a> |
+        <a href="gallery.html">Gallery</a> |
+        <a href="contact.html">Contact</a> |
+        <a href="feedback.html">Feedback</a>
+    </p>
 
-        </div>
+    <p>
+        © 2025 Webbs Motors. All Rights Reserved.
+    </p>
 
-        <!-- STAT 4 -->
-        <div class="stat-box">
-
-            <i class="fa-solid fa-shield-halved"></i>
-
-            <div class="stat-text">
-
-                <h3>100%</h3>
-
-                <p>QUALITY GUARANTEE</p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- INFO SECTION -->
-    <section class="info-section">
-
-        <!-- WHY CHOOSE US -->
-        <div class="info-box">
-
-            <h2>WHY CHOOSE US?</h2>
-
-            <div class="title-line">
-                <div class="small-red"></div>
-                <div class="small-green"></div>
-            </div>
-
-            <ul>
-
-                <li>
-                    <i class="fa-solid fa-circle-check"></i>
-                    Skilled & Experienced Team
-                </li>
-
-                <li>
-                    <i class="fa-solid fa-circle-check"></i>
-                    Modern Equipment
-                </li>
-
-                <li>
-                    <i class="fa-solid fa-circle-check"></i>
-                    Quality Materials
-                </li>
-
-                <li>
-                    <i class="fa-solid fa-circle-check"></i>
-                    Customer Satisfaction Guaranteed
-                </li>
-
-            </ul>
-
-        </div>
-
-        <!-- LOCATION -->
-        <div class="info-box">
-
-            <h2>OUR LOCATION</h2>
-
-            <div class="title-line">
-                <div class="small-red"></div>
-                <div class="small-green"></div>
-            </div>
-
-            <div class="location-icon">
-                <i class="fa-solid fa-location-dot"></i>
-            </div>
-
-            <p>
-                Plot 22942 Industrial,<br>
-                Gaborone, Botswana
-            </p>
-
-        </div>
-
-        <!-- FOLLOW US -->
-        <div class="info-box">
-
-            <h2>FOLLOW US</h2>
-
-            <div class="title-line">
-                <div class="small-red"></div>
-                <div class="small-green"></div>
-            </div>
-
-            <div class="social-icons">
-
-                <a href="#">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </a>
-
-                <a href="#">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-
-                <a href="#">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-
-        <!-- LEFT -->
-        <div class="footer-left">
-
-            <img src="images/logo.png"
-            alt="Webbs Motors Logo">
-
-            <div class="footer-socials">
-
-                <a href="#">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </a>
-
-                <a href="#">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-
-                <a href="#">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </a>
-
-            </div>
-
-        </div>
-
-        <!-- RIGHT -->
-        <div class="footer-right">
-
-            <div class="footer-links">
-
-                <a href="index.html">Home</a>
-
-                <a href="about.html">About Us</a>
-
-                <a href="services.html">Services</a>
-
-                <a href="gallery.html">Gallery</a>
-
-                <a href="contact.html">Contact</a>
-
-                <a href="feedback.html">Feedback</a>
-
-            </div>
-
-            <p>
-                © 2025 Webbs Motors.
-                All Rights Reserved.
-            </p>
-
-        </div>
-
-    </footer>
+</footer>
 
 </body>
 </html>
