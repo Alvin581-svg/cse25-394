@@ -1,4 +1,4 @@
-/* index.style.css */
+/* style.css */
 
 *{
     margin:0;
@@ -10,299 +10,347 @@
 body{
     background:#fff;
     color:#111;
+    overflow-x:hidden;
 }
 
 /* TOP LINE */
 
 .top-line{
+    width:100%;
     height:6px;
     background:linear-gradient(to right, red, green);
 }
 
-/* NAVBAR */
+/* HEADER */
 
-.navbar{
-    background:#fff;
+header{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:15px 60px;
+    padding:18px 45px;
+    background:#fff;
 }
 
 .logo img{
-    width:140px;
+    width:130px;
 }
 
-.nav-links{
+nav{
     display:flex;
-    list-style:none;
-    gap:40px;
+    gap:50px;
 }
 
-.nav-links a{
+nav a{
     text-decoration:none;
     color:#111;
+    font-size:17px;
     font-weight:600;
+    padding:14px 24px;
+    border-radius:8px;
     transition:0.3s;
 }
 
-.nav-links a:hover,
-.nav-links .active{
+nav a:hover{
     background:red;
     color:#fff;
-    padding:12px 20px;
-    border-radius:6px;
 }
 
-/* HERO */
+nav a.active{
+    background:red;
+    color:#fff;
+}
 
-.hero{
-    position:relative;
-    height:700px;
+/* HERO SECTION */
+
+.hero-section{
+    width:100%;
+    min-height:85vh;
+
     background:
-        linear-gradient(rgba(0,0,0,0.65),
-        rgba(0,0,0,0.65)),
-        url('images/car.jpg');
+    linear-gradient(rgba(0,0,0,0.65),
+    rgba(0,0,0,0.65)),
+    url("images/hero-car.jpg");
+
     background-size:cover;
     background-position:center;
+
     display:flex;
     align-items:center;
-    padding-left:60px;
+
+    padding:40px 55px;
 }
 
 .hero-content{
+    width:50%;
     color:#fff;
-    max-width:600px;
 }
 
-.hero-content h1{
-    font-size:45px;
-    line-height:1.1;
+.hero-text h1{
+    font-size:68px;
     font-weight:900;
+    line-height:1.1;
+    margin-bottom:25px;
 }
 
-.green{
-    color:#16b316;
+.hero-text .green{
+    color:#00b000;
 }
 
-.red{
+.hero-text .red{
     color:red;
 }
 
-.hero-content p{
-    margin-top:30px;
-    font-size:16px;
-    line-height:1.7;
+.hero-text p{
+    font-size:20px;
+    line-height:1.8;
+    margin-bottom:35px;
 }
 
 .hero-buttons{
-    margin-top:35px;
     display:flex;
     gap:20px;
 }
 
-.btn{
+.hero-buttons a{
     text-decoration:none;
-    color:#fff;
-    padding:18px 35px;
-    border-radius:6px;
-    font-weight:bold;
+    padding:18px 34px;
+    border-radius:8px;
+    font-size:18px;
+    font-weight:700;
     transition:0.3s;
 }
 
-.red-btn{
+.btn-red{
     background:red;
+    color:#fff;
 }
 
-.green-btn{
-    background:#18b118;
+.btn-green{
+    background:green;
+    color:#fff;
 }
 
-.btn:hover{
-    opacity:0.8;
+.hero-buttons a:hover{
+    transform:translateY(-3px);
 }
 
 /* WELCOME SECTION */
 
 .welcome-section{
-    padding:80px 60px;
     display:flex;
     justify-content:space-between;
-    gap:60px;
+    gap:50px;
+    padding:50px;
+    background:#fff;
 }
 
 .welcome-text{
-    width:50%;
+    width:55%;
 }
 
 .welcome-text h2{
-    font-size:32px;
-    margin-bottom:30px;
+    font-size:52px;
+    font-weight:900;
+    line-height:1.2;
+    margin-bottom:25px;
 }
 
-.welcome-text span{
+.welcome-text .red{
     color:red;
 }
 
-.welcome-text span:last-child{
+.welcome-text .green{
     color:green;
 }
 
 .welcome-text p{
-    font-size:28px;
-    line-height:1.7;
+    font-size:18px;
+    line-height:1.9;
     margin-bottom:25px;
+    color:#222;
 }
 
 /* FEATURES */
 
 .features{
-    width:45%;
+    width:40%;
+    display:flex;
+    flex-direction:column;
+    gap:35px;
 }
 
 .feature-box{
     display:flex;
-    gap:25px;
-    margin-bottom:45px;
+    gap:20px;
+    align-items:flex-start;
 }
 
 .feature-box i{
+    font-size:42px;
     color:red;
-    font-size:50px;
 }
 
-.feature-box h3{
-    font-size:22px;
+.feature-text h3{
+    font-size:20px;
+    font-weight:800;
     margin-bottom:10px;
 }
 
-.feature-box p{
-    font-size:14px;
-    line-height:1.5;
+.feature-text p{
+    font-size:16px;
+    line-height:1.6;
+    color:#333;
 }
 
-/* SERVICES BAR */
+/* SERVICES STRIP */
 
-.services-bar{
-    background:#020814;
+.service-strip{
+    background:linear-gradient(to right, #000, #021324, #003300);
     color:#fff;
-    padding:45px 60px;
+
     display:flex;
-    justify-content:space-between;
-    gap:40px;
+    justify-content:space-around;
+    align-items:center;
+
+    padding:35px 20px;
 }
 
-.service-item{
+.strip-box{
     display:flex;
-    gap:20px;
-    width:33%;
+    align-items:flex-start;
+    gap:18px;
+    width:30%;
 }
 
-.service-item i{
+.strip-box i{
     font-size:45px;
     color:#fff;
 }
 
-.service-item h3{
-    font-size:28px;
-    margin-bottom:10px;
-}
-
-.service-item p{
+.strip-text h3{
     font-size:22px;
-    line-height:1.5;
+    margin-bottom:10px;
+    font-weight:800;
 }
 
-/* CTA */
+.strip-text p{
+    font-size:16px;
+    line-height:1.7;
+    color:#f1f1f1;
+}
+
+.strip-divider{
+    width:1px;
+    height:90px;
+    background:#666;
+}
+
+/* CTA SECTION */
 
 .cta-section{
     background:
-        linear-gradient(rgba(0,0,0,0.75),
-        rgba(0,0,0,0.75)),
-        url('images/darkcar.jpg');
+    linear-gradient(rgba(0,0,0,0.8),
+    rgba(0,0,0,0.8)),
+    url("images/cta-car.jpg");
+
     background-size:cover;
     background-position:center;
-    color:#fff;
-    padding:80px 60px;
+
+    padding:60px 55px;
+}
+
+.cta-content{
     display:flex;
     justify-content:space-between;
     align-items:center;
 }
 
-.cta-content h2{
-    font-size:55px;
-    margin-bottom:20px;
+.cta-text h2{
+    color:#fff;
+    font-size:48px;
+    margin-bottom:15px;
+    font-weight:900;
 }
 
-.cta-content p{
-    font-size:28px;
+.cta-text p{
+    color:#fff;
+    font-size:20px;
+}
+
+.cta-btn{
+    text-decoration:none;
+    background:green;
+    color:#fff;
+    padding:20px 40px;
+    border-radius:8px;
+    font-size:22px;
+    font-weight:800;
+    transition:0.3s;
+}
+
+.cta-btn:hover{
+    background:#009900;
 }
 
 /* FOOTER */
 
 footer{
-    background:linear-gradient(to right, red, green);
-    padding:40px 60px;
+    background:linear-gradient(to right, red, #9f0000, green);
     color:#fff;
-    text-align:center;
+    padding:35px 45px;
+}
+
+.footer-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
 }
 
 .footer-logo img{
-    width:120px;
-    margin-bottom:25px;
+    width:130px;
+    background:#fff;
+    border-radius:50%;
 }
 
-.social-icons{
-    margin-bottom:25px;
+.footer-socials{
+    display:flex;
+    gap:20px;
 }
 
-.social-icons a{
+.footer-socials a{
+    width:60px;
+    height:60px;
+    border:2px solid #fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
     color:#fff;
-    margin:0 15px;
-    font-size:35px;
+    font-size:26px;
 }
 
 .footer-links{
-    margin-bottom:20px;
+    display:flex;
+    gap:35px;
 }
 
 .footer-links a{
-    color:#fff;
     text-decoration:none;
-    margin:0 15px;
-    font-size:22px;
+    color:#fff;
+    font-size:20px;
 }
 
 .copyright{
-    font-size:20px;
+    text-align:center;
+    margin-top:30px;
+    font-size:22px;
 }
 
 /* RESPONSIVE */
 
-@media(max-width:992px){
-
-    .navbar{
-        flex-direction:column;
-        gap:20px;
-    }
-
-    .nav-links{
-        flex-wrap:wrap;
-        justify-content:center;
-    }
-
-    .hero{
-        height:auto;
-        padding:80px 30px;
-    }
-
-    .hero-content h1{
-        font-size:45px;
-    }
-
-    .hero-content p{
-        font-size:22px;
-    }
+@media(max-width:1200px){
 
     .welcome-section{
         flex-direction:column;
@@ -313,18 +361,62 @@ footer{
         width:100%;
     }
 
-    .services-bar{
+    .service-strip{
         flex-direction:column;
+        gap:30px;
     }
 
-    .service-item{
+    .strip-box{
         width:100%;
     }
 
-    .cta-section{
-        flex-direction:column;
-        gap:30px;
-        text-align:center;
+    .strip-divider{
+        display:none;
+    }
+
+    .hero-content{
+        width:70%;
     }
 }
 
+@media(max-width:850px){
+
+    header{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:18px;
+    }
+
+    .hero-content{
+        width:100%;
+    }
+
+    .hero-text h1{
+        font-size:45px;
+    }
+
+    .welcome-text h2{
+        font-size:38px;
+    }
+
+    .cta-content{
+        flex-direction:column;
+        gap:25px;
+        text-align:center;
+    }
+
+    .footer-content{
+        flex-direction:column;
+        gap:30px;
+    }
+
+    .footer-links{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+}
