@@ -6,7 +6,8 @@
 }
 
 body{
-    background:#f8f8f8;
+   background:#f8f8f8;
+    overflow-x:hidden;
 }
 
 /* NAVBAR */
@@ -31,9 +32,9 @@ nav ul{
 }
 
 nav ul li a{
-    text-decoration:none;
+ text-decoration:none;
     color:#333;
-    font-size:17px;
+    font-size:15px;
     transition:0.3s;
 }
 
@@ -50,13 +51,13 @@ nav ul li a:hover{
 
 /* ABOUT SECTION */
 .about{
-    width:100%;
+   width:100%;
     min-height:90vh;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:70px 80px;
-    gap:60px;
+    padding:40px 60px;
+    gap:40px;
 }
 
 /* IMAGE */
@@ -76,9 +77,10 @@ nav ul li a:hover{
 }
 
 .about-text h1{
-    font-size:48px;
+   font-size:36px;
     color:#2e7d32;
     margin-bottom:15px;
+    line-height:1.3;
 }
 
 .about-text span{
@@ -93,10 +95,10 @@ nav ul li a:hover{
 }
 
 .about-text p{
-    font-size:18px;
+       font-size:16px;
     line-height:1.8;
     color:#555;
-    margin-bottom:20px;
+    margin-bottom:18px;
 }
 
 /* BUTTON */
@@ -106,9 +108,11 @@ nav ul li a:hover{
     text-decoration:none;
     background:#d62828;
     color:#fff;
-    padding:14px 28px;
+    padding:12px 22px;
     border-radius:8px;
+    font-size:15px;
     transition:0.3s;
+
 }
 
 .btn:hover{
@@ -123,9 +127,9 @@ nav ul li a:hover{
 }
 
 .choose h2{
-    font-size:40px;
+   font-size:32px;
     color:#2e7d32;
-    margin-bottom:50px;
+    margin-bottom:40px;
 }
 
 .choose-container{
