@@ -6,7 +6,8 @@
 }
 
 body{
-    background:#f7f7f7;
+   background:#f7f7f7;
+    overflow-x:hidden;   
 }
 
 /* NAVBAR */
@@ -33,7 +34,7 @@ nav ul{
 nav ul li a{
     text-decoration:none;
     color:#333;
-    font-size:17px;
+    font-size:15px;
     transition:0.3s;
 }
 
@@ -51,11 +52,11 @@ nav ul li a:hover{
 /* HERO */
 .feedback-hero{
     text-align:center;
-    padding:80px 20px 50px;
+    padding:50px 20px 40px;
 }
 
 .feedback-hero h1{
-    font-size:55px;
+     font-size:38px;
     color:#2e7d32;
 }
 
@@ -71,29 +72,29 @@ nav ul li a:hover{
 }
 
 .feedback-hero p{
-    max-width:700px;
+     max-width:650px;
     margin:auto;
     color:#555;
-    font-size:18px;
+    font-size:16px;
     line-height:1.8;
 }
 
 /* MAIN SECTION */
 .feedback-container{
-    width:90%;
+    width:88%;
     margin:auto;
-    padding-bottom:80px;
+    padding-bottom:60px;
 
     display:flex;
     justify-content:space-between;
-    gap:40px;
+    gap:30px;
 }
 
 /* LEFT */
 .feedback-info{
-    width:40%;
+     width:40%;
     background:#fff;
-    padding:40px;
+    padding:30px;
     border-radius:18px;
     box-shadow:0 5px 20px rgba(0,0,0,0.08);
 }
@@ -121,7 +122,7 @@ nav ul li a:hover{
 .feedback-form{
     width:55%;
     background:#fff;
-    padding:40px;
+    padding:30px;
     border-radius:18px;
     box-shadow:0 5px 20px rgba(0,0,0,0.08);
 }
@@ -134,11 +135,11 @@ form{
 form input,
 form select,
 form textarea{
-    margin-bottom:20px;
-    padding:15px;
+ margin-bottom:18px;
+    padding:13px;
     border:1px solid #ccc;
     border-radius:10px;
-    font-size:16px;
+    font-size:15px;
     outline:none;
 }
 
@@ -148,12 +149,12 @@ form textarea{
 }
 
 form button{
-    background:#d62828;
+ background:#d62828;
     color:#fff;
     border:none;
-    padding:15px;
+    padding:13px;
     border-radius:10px;
-    font-size:16px;
+    font-size:15px;
     cursor:pointer;
     transition:0.3s;
 }
