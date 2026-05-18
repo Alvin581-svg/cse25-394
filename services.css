@@ -6,7 +6,8 @@
 }
 
 body{
-    background:#f7f7f7;
+     background:#f7f7f7;
+    overflow-x:hidden;
 }
 
 /* NAVBAR */
@@ -33,7 +34,7 @@ nav ul{
 nav ul li a{
     text-decoration:none;
     color:#333;
-    font-size:17px;
+    font-size:15px;
     transition:0.3s;
 }
 
@@ -51,11 +52,11 @@ nav ul li a:hover{
 /* HERO */
 .services-hero{
     text-align:center;
-    padding:80px 20px 50px;
+    padding:50px 20px 40px;
 }
 
 .services-hero h1{
-    font-size:55px;
+font-size:38px;
     color:#2e7d32;
 }
 
@@ -71,22 +72,24 @@ nav ul li a:hover{
 }
 
 .services-hero p{
-    max-width:700px;
+        max-width:650px;
     margin:auto;
     color:#555;
-    font-size:18px;
+    font-size:16px;
     line-height:1.8;
+
 }
 
 /* SERVICES */
 .services-container{
-    width:90%;
+       width:88%;
     margin:auto;
-    padding-bottom:80px;
+    padding-bottom:60px;
 
     display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
-    gap:30px;
+    grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+    gap:25px;
+
 }
 
 .service-box{
@@ -108,15 +111,16 @@ nav ul li a:hover{
 }
 
 .service-box h2{
-    font-size:24px;
+     font-size:20px;
     color:#d62828;
-    padding:25px 25px 10px;
+    padding:20px 20px 10px;
 }
 
 .service-box p{
-    color:#555;
+     color:#555;
     line-height:1.7;
-    padding:0 25px 30px;
+    font-size:15px;
+    padding:0 20px 25px;
 }
 
 /* RESPONSIVE */
