@@ -191,7 +191,7 @@ nav ul li a:hover{
 }
 
 /* RESPONSIVE */
-@media(max-width:1100px){
+@media(max-width:768px){
 
     .hero-content{
         flex-direction:column;
@@ -212,7 +212,7 @@ nav ul li a:hover{
     }
 
     .text-content h1{
-        font-size:55px;
+        font-size:38px;
     }
 
     .features{
