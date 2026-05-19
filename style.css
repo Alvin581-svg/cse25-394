@@ -72,8 +72,8 @@ nav ul li a:hover{
 }
 
 .text-content h1{
-    font-size:46px;
-    line-height:1.2;
+    font-size:34px;
+    line-height:1.1;
     font-weight:700;
 }
 
@@ -93,7 +93,7 @@ nav ul li a:hover{
 }
 
 .text-content p{
-    font-size:16px;
+    font-size:14px;
     color:#555;
     line-height:1.8;
     margin-bottom:30px;
@@ -110,7 +110,7 @@ nav ul li a:hover{
     color:#fff;
     padding:14px 24px;
     border-radius:8px;
-    font-size:16px;
+    font-size:14px;
     font-weight:500;
     transition:0.3s;
 }
