@@ -56,8 +56,9 @@ nav ul li a:hover{
 }
 
 .contact-hero h1{
-    font-size:38px;
+    font-size:30px;
     color:#2e7d32;
+     line-height:1.1;
 
 }
 
@@ -104,11 +105,13 @@ max-width:650px;
 .contact-info h2{
     color:#d62828;
     margin-bottom:20px;
+     font-size:22px;
 }
 
 .contact-info p{
     color:#555;
     line-height:1.8;
+    font-size:14px;
 }
 
 .info-box{
@@ -138,10 +141,10 @@ form{
 form input,
 form textarea{
  margin-bottom:18px;
-    padding:13px;
+    padding:10px;
     border:1px solid #ccc;
     border-radius:10px;
-    font-size:15px;
+    font-size:13px;
     outline:none;
 }
 
@@ -154,9 +157,9 @@ form button{
        background:#d62828;
     color:#fff;
     border:none;
-    padding:13px;
+    padding:10px;
     border-radius:10px;
-    font-size:15px;
+    font-size:13px;
     cursor:pointer;
     transition:0.3s;
 }
@@ -189,6 +192,6 @@ form button:hover{
     }
 
     .contact-hero h1{
-        font-size:40px;
+        font-size:30px;
     }
 }
