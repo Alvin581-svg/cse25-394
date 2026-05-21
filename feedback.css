@@ -56,8 +56,9 @@ nav ul li a:hover{
 }
 
 .feedback-hero h1{
-     font-size:38px;
+     font-size:30px;
     color:#2e7d32;
+    line-height:1.1;
 }
 
 .feedback-hero span{
@@ -75,8 +76,8 @@ nav ul li a:hover{
      max-width:650px;
     margin:auto;
     color:#555;
-    font-size:16px;
-    line-height:1.8;
+    font-size:14px;
+    line-height:1.7;
 }
 
 /* MAIN SECTION */
@@ -102,11 +103,13 @@ nav ul li a:hover{
 .feedback-info h2{
     color:#d62828;
     margin-bottom:20px;
+     font-size:22px;
 }
 
 .feedback-info p{
     color:#555;
     line-height:1.8;
+     font-size:14px;
 }
 
 .feedback-box{
@@ -136,10 +139,10 @@ form input,
 form select,
 form textarea{
  margin-bottom:18px;
-    padding:13px;
+    padding:10px;
     border:1px solid #ccc;
     border-radius:10px;
-    font-size:15px;
+    font-size:13px;
     outline:none;
 }
 
@@ -152,9 +155,9 @@ form button{
  background:#d62828;
     color:#fff;
     border:none;
-    padding:13px;
+    padding:10px;
     border-radius:10px;
-    font-size:15px;
+    font-size:13px;
     cursor:pointer;
     transition:0.3s;
 }
@@ -187,6 +190,6 @@ form button:hover{
     }
 
     .feedback-hero h1{
-        font-size:40px;
+        font-size:30px;
     }
 }
